@@ -34,9 +34,9 @@ function Topnav() {
           src={AFILogo}
           alt="Aqidah dan Filsafat Islam"
           title="Aqidah dan Filsafat Islam"
-          className="w-12 transition-all ease-in group-hover:drop-shadow-md"
+          className="transition-all ease-in w-14 group-hover:drop-shadow-md"
         />
-        <div className="flex-col hidden text-base font-semibold leading-5 md:flex">
+        <div className="flex-col hidden text-xl font-semibold leading-5 md:flex">
           <span className="transition-all ease-in group-hover:drop-shadow-md text-slate-500">
             Himpunan Mahasiswa
           </span>
@@ -46,7 +46,7 @@ function Topnav() {
         </div>
       </div>
 
-      <ul className="flex flex-row gap-6 font-medium md:gap-8">
+      <ul className="flex flex-row gap-6 text-xl font-medium md:gap-8">
         {MENU_BAR.map((menu, index) => (
           <li key={index}>
             <a
