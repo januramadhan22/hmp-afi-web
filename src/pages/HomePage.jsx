@@ -151,18 +151,6 @@ function HomePage() {
               ))}
             </Slider>
           </div>
-          <div className="flex flex-col items-center max-w-3xl gap-8 px-10 py-6 mt-12 text-center bg-blue-700 md:mt-0 rounded-xl drop-shadow-md">
-            <h1 className="text-5xl font-bold text-white">
-              Let's Make Benefits
-            </h1>
-            <h3 className="w-full text-2xl font-medium text-white md:w-10/12">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta,
-              vel.
-            </h3>
-            <button className="px-5 py-2 font-medium text-blue-500 transition-all ease-out bg-white border-2 border-blue-700 rounded-md w-fit hover:shadow-lg hover:scale-105">
-              Our Events
-            </button>
-          </div>
         </ColumnContainer>
 
         {/* Footer */}

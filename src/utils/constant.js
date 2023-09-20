@@ -30,7 +30,7 @@ export const EVENTS = [
     section: "Religion",
     photo: [Ziarah, Kajian, Ziarah],
     description:
-      "Ziarah is a routine agenda held by HMPAFI. These activities are under the auspices of the Social and Religious Divisions.<br />This agenda is carried out once a month by visiting the graves of the guardians located around the city of Surabaya, and is free for anyone who wants to join, regardless of HMPAFI members or students from other faculties.<br />Apart from being intended as an effort to commemorate the services of the saints, this agenda is also intended as a reminder that every human being will eventually experience death. So with this reminder, it is hoped that it will be more useful for the wider community in the future.",
+      "Ziarah is a routine agenda held by HMPAFI. These activities are under the auspices of the Social and Religious Divisions. This agenda is carried out once a month by visiting the graves of the guardians located around the city of Surabaya, and is free for anyone who wants to join, regardless of HMPAFI members or students from other faculties. Apart from being intended as an effort to commemorate the services of the saints, this agenda is also intended as a reminder that every human being will eventually experience death. So with this reminder, it is hoped that it will be more useful for the wider community in the future.",
   },
   {
     title: "Pelantikan",

@@ -33,35 +33,29 @@ function EventModal({ isModal, onClose, selectedEvent }) {
           p: 4,
           borderRadius: 2,
           overflow: "clip",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
         }}
       >
-        <h1 className="mb-8 text-2xl font-semibold text-center">
+        <h1 className="mb-4 text-2xl font-semibold text-center">
           {selectedEvent?.title}
         </h1>
-        <Box sx={{ width: 720 }}>
+        <div className="items-center w-[320px] lg:w-[420px]">
           <Slider {...sliderModals}>
             {selectedEvent?.photo.map((step, index) => (
               <div key={index} className="p-2">
-                <Box
-                  component="img"
-                  sx={{
-                    height: 500,
-                    display: "block",
-                    width: 720,
-                    overflow: "hidden",
-                    borderRadius: 2,
-                    objectFit: "cover",
-                  }}
+                <img
+                  className="w-[320px] h-[240px] object-cover rounded-md lg:h-[280px] lg:w-[420px]"
                   src={step}
                   alt={selectedEvent?.title}
                 />
               </div>
             ))}
           </Slider>
-        </Box>
-        <div className="flex flex-col w-full h-[160px] gap-3 mt-8 overflow-y-scroll text-left">
-          <h3 className="text-xl font-semibold">{selectedEvent?.title}</h3>
-          <p className="text-lg font-medium text-gray-600">
+        </div>
+        <div className="flex flex-col lg:w-[420px] max-h-[160px] gap-2 mt-8 overflow-y-auto text-left">
+          <p className="text-base font-medium text-justify text-gray-600">
             {selectedEvent?.description}
           </p>
         </div>
