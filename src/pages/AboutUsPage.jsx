@@ -10,9 +10,9 @@ function AboutUsPage() {
       <Topnav />
 
       <ColumnContainer>
-        <div className="flex flex-col max-w-5xl gap-8 text-center">
-          <h1 className="font-medium text-center text-7xl">Who Are We?</h1>
-          <p className="text-3xl leading-[52px] font-base">
+        <div className="flex flex-col max-w-3xl gap-5 text-center">
+          <h1 className="text-5xl font-bold text-center">Who Are We?</h1>
+          <p className="text-xl leading-10 font-base">
             <b>Himpunan Aqidah & Filsafat Islam</b> commonly abbreviated as{" "}
             <b>HMPAFI</b> is an Association of Islamic faith and philosophy
             Student at Islamic University of Sunan Ampel Surabaya (UINSA),

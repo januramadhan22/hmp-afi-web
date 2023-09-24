@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { AccountBox, Home, Phone, SpatialAudioOff } from "@mui/icons-material";
 
 import { MENU_BAR } from "../../utils/constant";
@@ -8,6 +8,7 @@ import AFILogo from "../../assets/afi_logo.png";
 
 function Topnav() {
   const { pathname } = useLocation();
+  const navigate = useNavigate();
   const [transition, setTransition] = useState(false);
 
   const navbarTransition = () => {
@@ -34,9 +35,12 @@ function Topnav() {
           src={AFILogo}
           alt="Aqidah dan Filsafat Islam"
           title="Aqidah dan Filsafat Islam"
-          className="transition-all ease-in w-14 group-hover:drop-shadow-md"
+          className="w-12 transition-all ease-in group-hover:drop-shadow-md"
         />
-        <div className="flex-col hidden text-xl font-semibold leading-5 md:flex">
+        <div
+          onClick={() => navigate("/home")}
+          className="flex-col hidden text-base font-semibold leading-5 md:flex"
+        >
           <span className="transition-all ease-in group-hover:drop-shadow-md text-slate-500">
             Himpunan Mahasiswa
           </span>
@@ -46,19 +50,28 @@ function Topnav() {
         </div>
       </div>
 
-      <ul className="flex flex-row gap-6 text-xl font-medium md:gap-8">
+      <ul className="flex flex-row gap-6 text-lg font-medium md:gap-8">
         {MENU_BAR.map((menu, index) => (
           <li key={index}>
-            <a
-              href={menu}
+            <button
+              onClick={() =>
+                navigate(
+                  menu === "contact us"
+                    ? "/contact-us"
+                    : menu === "about us"
+                    ? "/about-us"
+                    : `/${menu}`
+                )
+              }
+              // href={menu}
               className={`hidden md:block capitalize transition-all duration-200 ease-linear cursor-pointer hover:text-blue-400 hover:drop-shadow-md ${
-                pathname.slice(1, pathname.length) === menu
+                pathname.slice(1, pathname.length) === menu.replace(" ", "-")
                   ? "text-blue-400 drop-shadow-md"
                   : "text-slate-900"
               }`}
             >
               {menu}
-            </a>
+            </button>
             <a
               title={menu}
               href={menu}

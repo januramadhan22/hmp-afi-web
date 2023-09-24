@@ -18,14 +18,10 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 function HomePage() {
+  document.title = "HOMEPAGE";
   const navigate = useNavigate();
-  const flashMessages = ["HMP Aqidah & Filsafat Islam", "HOMEPAGE"]; // Add your messages here
   const [isModal, setIsModal] = useState(false);
   const [selectedEvent, setSelectedEvent] = useState(null);
-
-  useEffect(() => {
-    showFlashMessage(flashMessages);
-  }, []);
 
   const settings = {
     dots: true,
@@ -71,18 +67,23 @@ function HomePage() {
           <div className="absolute bottom-0 z-0 md:w-3/4 lg:w-2/4">
             <img src={TeamIllustration} alt="Team" title="Team" />
           </div>
-          <h1 className="relative z-10 max-w-4xl text-5xl font-semibold text-center">
-            Lorem ipsum dolor sit amet.
+          <h1 className="relative z-10 max-w-4xl text-5xl font-bold text-center uppercase">
+            Welcome to <span className="text-blue-500">AFI</span>
           </h1>
-          <h3 className="relative z-10 max-w-4xl text-2xl text-center">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora
-            quo ullam in beatae ea illo.
+          <h3 className="relative z-10 max-w-4xl text-3xl font-semibold text-center">
+            Opening the door of wisdom in the horizon of faith.
           </h3>
           <div className="relative z-10 flex flex-row gap-8">
-            <button className="px-5 py-2 font-medium text-white transition-all ease-out bg-blue-500 border-2 border-blue-500 rounded-md w-fit hover:shadow-lg hover:scale-105">
+            <button
+              onClick={() => (window.location.href = "#events")}
+              className="px-5 py-2 font-medium text-white transition-all ease-out bg-blue-500 border-2 border-blue-500 rounded-md w-fit hover:shadow-lg hover:scale-105"
+            >
               Our Events
             </button>
-            <button className="px-5 py-2 font-medium text-blue-500 transition-all ease-out bg-white border-2 border-blue-500 rounded-md w-fit hover:shadow-lg hover:scale-105">
+            <button
+              onClick={() => navigate("/about-us")}
+              className="px-5 py-2 font-medium text-blue-500 transition-all ease-out bg-white border-2 border-blue-500 rounded-md w-fit hover:shadow-lg hover:scale-105"
+            >
               Our Story
             </button>
           </div>
@@ -128,7 +129,7 @@ function HomePage() {
         </RowContainer>
 
         {/* Event List */}
-        <ColumnContainer>
+        <ColumnContainer id={"events"}>
           <div className="space-y-4">
             <h1 className="text-5xl font-semibold text-center">Events</h1>
             <h3 className="text-2xl text-center">

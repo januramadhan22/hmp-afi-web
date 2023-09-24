@@ -4,8 +4,6 @@ import HomePage from "../pages/HomePage";
 import AspirationPage from "../pages/AspirationPage";
 import AboutUsPage from "../pages/AboutUsPage";
 import ContactUsPage from "../pages/ContactUsPage";
-import { useEffect } from "react";
-import { useState } from "react";
 
 function App() {
   return (
@@ -17,9 +15,9 @@ function App() {
 
         <Route path="/aspiration" element={<AspirationPage />} />
 
-        <Route path="/about us" element={<AboutUsPage />} />
+        <Route path="/about-us" element={<AboutUsPage />} />
 
-        <Route path="/contact us" element={<ContactUsPage />} />
+        <Route path="/contact-us" element={<ContactUsPage />} />
       </Routes>
     </BrowserRouter>
   );
