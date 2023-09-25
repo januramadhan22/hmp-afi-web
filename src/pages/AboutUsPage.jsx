@@ -5,6 +5,8 @@ import Information from "../components/footer/Information";
 import Copyright from "../components/footer/Copyright";
 
 function AboutUsPage() {
+  document.title = "ABOUT US";
+
   return (
     <div className="relative flex flex-col w-full min-h-screen">
       <Topnav />

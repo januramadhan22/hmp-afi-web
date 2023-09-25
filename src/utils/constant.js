@@ -16,15 +16,15 @@ export const MENU_BAR = ["home", "aspiration", "about us", "contact us"];
 export const SOCIAL_MEDIA = [
   {
     name: "instagram",
-    link: "https://instagram.com/januramadhan_",
-  },
-  {
-    name: "facebook",
-    link: "https://instagram.com/januramadhan_",
+    link: "https://instagram.com/Hmpafi_Uinsby",
   },
   {
     name: "twitter",
-    link: "https://instagram.com/januramadhan_",
+    link: "https://twitter.com/hmpafiuinsby",
+  },
+  {
+    name: "youtube",
+    link: "https://twitter.com/hmpafiuinsby",
   },
 ];
 
