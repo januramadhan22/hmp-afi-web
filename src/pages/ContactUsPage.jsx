@@ -9,7 +9,6 @@ import CustomForm from "../components/form/CustomForm";
 import CustomButton from "../components/button/CustomButton";
 import { handleSendMessage } from "../utils/hooks";
 
-import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
 
 function ContactUsPage() {

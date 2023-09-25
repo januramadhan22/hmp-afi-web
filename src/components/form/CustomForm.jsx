@@ -13,14 +13,14 @@ function CustomForm({ label, placeholder, type, isTextArea, onChange, value }) {
           onChange={onChange}
           value={value}
           placeholder={placeholder}
-          className="border max-w-[500px] w-[500px] h-14 px-4 py-2 text-xl rounded-md bg-slate-100 focus:outline-blue-400 transition-colors ease-in duration-300 border-slate-400 focus:bg-blue-50"
+          className="border max-w-[500px] w-[320px] md:w-[500px] h-14 px-4 py-2 text-xl rounded-md bg-slate-100 focus:outline-blue-400 transition-colors ease-in duration-300 border-slate-400 focus:bg-blue-50"
         />
       ) : (
         <textarea
           onChange={onChange}
           value={value}
           placeholder={placeholder}
-          className="border max-w-[500px] h-[300px] w-[500px]  px-4 py-2 text-xl rounded-md bg-slate-100 focus:outline-blue-400 focus:bg-blue-50 transition-colors ease-in duration-300 border-slate-400"
+          className="border max-w-[500px] h-[300px] w-[320px] md:w-[500px] px-4 py-2 text-xl rounded-md bg-slate-100 focus:outline-blue-400 focus:bg-blue-50 transition-colors ease-in duration-300 border-slate-400"
         />
       )}
     </form>
