@@ -9,7 +9,6 @@ import ColumnContainer from "../components/container/ColumnContainer";
 import RowContainer from "../components/container/RowContainer";
 import EventModal from "../components/modal/EventModal";
 import { EVENTS } from "../utils/constant";
-import { showFlashMessage } from "../utils/hooks";
 
 import TeamIllustration from "../assets/team_illustration.png";
 import ToastIllustration from "../assets/toast_illustration.png";
