@@ -45,6 +45,18 @@ import Nurajija_Kadir from "../assets/team/SOCIAL_RELIGION/Nurajija Kadir.JPG";
 import Shollu_Amella_Kurung from "../assets/team/SOCIAL_RELIGION/Shollu Amella Kurung.JPG";
 import Zainul_Furqon from "../assets/team/SOCIAL_RELIGION/Zainul Furqon.JPG";
 
+// PSDM
+import Achmad_Ridhodzillah from "../assets/team/PSDM/Achmad Ridhodzillah ( Div PSDM).JPG";
+import Anjar_Azimatillah from "../assets/team/PSDM/Anjar Azimatillah ( Div. PSDM).JPG";
+import Brian_Satriawan_Arisky from "../assets/team/PSDM/Brian Satriawan Arisky (Div. PSDM).JPG";
+import Diky_Kurniawan_Arief from "../assets/team/PSDM/Diky Kurniawan Arief ( Div. PSDM).JPG";
+import M_Ainul_Rofiq from "../assets/team/PSDM/M. Ainul Rofiq.JPG";
+import Muhammad_Luthfi_HS from "../assets/team/PSDM/Muhammad Luthfi HS.JPG";
+import Muhammad_Yogy_Qorri_Dwi_Pratama from "../assets/team/PSDM/Muhammad Yogy Qorri Dwi Pratama.JPG";
+import Nasya_Amira from "../assets/team/PSDM/Nasya Amira.JPG";
+import Nikisa_Ichobana_Rhasaki from "../assets/team/PSDM/Nikisa Ichobana Rhasaki.JPG";
+import Salwa_Islami_Ats_Tsaury from "../assets/team/PSDM/Salwa Islami Ats Tsaury.JPG";
+
 export const TEAMS = [
   {
     division: "Badan Pengurus Harian",
@@ -243,6 +255,61 @@ export const TEAMS = [
       {
         photo: Zainul_Furqon,
         name: "Zainul Furqon",
+        role: "Treasurer",
+      },
+    ],
+  },
+  {
+    division: "PSDM ",
+    member: [
+      {
+        photo: Achmad_Ridhodzillah,
+        name: "Achmad Ridhodzillah",
+        role: "Vice Chairman",
+      },
+      {
+        photo: Anjar_Azimatillah,
+        name: "Anjar Azimatillah",
+        role: "Secretary",
+      },
+      {
+        photo: Brian_Satriawan_Arisky,
+        name: "Brian Satriawan Arisky",
+        role: "Vice Secretary",
+      },
+      {
+        photo: Diky_Kurniawan_Arief,
+        name: "Diky Kurniawan Arief",
+        role: "Treasurer",
+      },
+      {
+        photo: M_Ainul_Rofiq,
+        name: "M. Ainul Rofiq",
+        role: "Treasurer",
+      },
+      {
+        photo: Muhammad_Luthfi_HS,
+        name: "Muhammad Luthfi HS",
+        role: "Treasurer",
+      },
+      {
+        photo: Muhammad_Yogy_Qorri_Dwi_Pratama,
+        name: "Muhammad Yogy Qorri Dwi Pratama",
+        role: "Treasurer",
+      },
+      {
+        photo: Nasya_Amira,
+        name: "Nasya Amira",
+        role: "Treasurer",
+      },
+      {
+        photo: Nikisa_Ichobana_Rhasaki,
+        name: "Nikisa Ichobana Rhasaki",
+        role: "Treasurer",
+      },
+      {
+        photo: Salwa_Islami_Ats_Tsaury,
+        name: "Salwa Islami Ats Tsaury",
         role: "Treasurer",
       },
     ],

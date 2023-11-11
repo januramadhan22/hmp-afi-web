@@ -30,12 +30,12 @@ export const SOCIAL_MEDIA = [
 
 export const EVENTS = [
   {
-    title: "Kajian Rutin",
+    title: "Regular Discussions",
     section: "Discussion",
     photo: [],
   },
   {
-    title: "Ziarah",
+    title: "Grave Pilgrimage",
     section: "Religion",
     photo: [Z_1],
     description:
@@ -47,11 +47,11 @@ export const EVENTS = [
     photo: [],
   },
   {
-    title: "Orientasi Jurusan",
+    title: "Orientation of Program Study",
     section: "Student Affairs",
     photo: [OJ_1, OJ_2, OJ_3],
   },
-  { title: "Zakat & Santunan", section: "Social Awareness", photo: [ZS_1] },
+  { title: "Zakat & Donations", section: "Social Awareness", photo: [ZS_1] },
   {
     title: "Upgrading Skills",
     section: "Interest & Talent",
