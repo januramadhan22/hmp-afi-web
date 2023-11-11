@@ -7,6 +7,8 @@ import RowContainer from "../components/container/RowContainer";
 import Slider from "react-slick";
 import { TEAMS } from "../utils/teamsData";
 
+import MemberImage from "../assets/team/Member of AFI 2023.png";
+
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -23,8 +25,8 @@ function AboutUsPage() {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
+          slidesToShow: 1,
+          slidesToScroll: 1,
           infinite: false,
           dots: true,
         },
@@ -32,9 +34,9 @@ function AboutUsPage() {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1,
         },
       },
       {
@@ -63,10 +65,15 @@ function AboutUsPage() {
             fields of academics, non-academics, and other related purposes.
           </p>
         </div>
+        <img
+          src={MemberImage}
+          alt="Member of AFI 2023"
+          className="h-full shadow-xl md:max-w-full lg:max-w-full xl:max-w-screen-xl rounded-2xl"
+        />
       </ColumnContainer>
 
       <div className="flex justify-center w-full">
-        <Slider {...settings} className="flex justify-center max-w-screen-lg">
+        <Slider {...settings} className="flex justify-center w-10/12">
           {TEAMS.map((item, index) => (
             <div key={index} className="flex flex-col w-full">
               <h1 className="mb-8 text-3xl font-semibold text-center">
@@ -76,13 +83,19 @@ function AboutUsPage() {
                 {item?.member?.map((member, idx) => (
                   <div
                     className={`flex-col items-center ${
-                      idx > 2 ? "w-[200px]" : "w-[280px]"
+                      item.division === "Badan Pengurus Harian"
+                        ? "md:w-[280px] lg:w-[320px]"
+                        : "w-[280px]"
                     }`}
                   >
                     <div key={idx} className={`h-auto rounded-md `}>
                       <img
                         src={member?.photo}
-                        className="object-cover w-full h-[320px] rounded-md shadow-lg"
+                        className={`object-cover w-full  rounded-md shadow-lg ${
+                          item.division === "Badan Pengurus Harian"
+                            ? "md:h-[320px] lg:h-full"
+                            : "h-[320px]"
+                        }`}
                       />
                     </div>
                     <h3 className="px-4 text-center">{member.name}</h3>
